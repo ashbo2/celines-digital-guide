@@ -159,34 +159,38 @@ GUIDE.addModule({
 <div class="part"><span class="part-num">Step 4</span><span class="part-title">Your turn: a company you've never seen</span></div>
 <div class="quiz"><div class="quiz-header">Think it through</div><h3>You get a text: "Your Medicare benefits are expiring. Renew at medicare-benefits-renew.com." What do you notice?</h3><div class="quiz-options"><button class="quiz-option" data-correct="true">The address ends in .com, not .gov &mdash; it isn't really Medicare. I'll delete it.</button><button class="quiz-option" data-correct="false">It mentions Medicare, so it must be real. I'll tap the link.</button></div><div class="quiz-feedback correct-fb">Exactly. Real Medicare websites end in <strong>.gov</strong>. This is a scam &mdash; delete it. If you're ever unsure, type <em>medicare.gov</em> yourself and sign in.</div><div class="quiz-feedback incorrect-fb">Look at the end of the address: <strong>.com</strong>. Real government websites always end in <strong>.gov</strong>. This one is a scam &mdash; delete it.</div></div>` },
 
-    { id: "m5-healthcare", title: "Your Doctor's Patient Portal (MyChart and Others)",
-      html: `<p>Most doctors' offices and hospitals have a <strong>patient portal</strong>: a website and app where you can message your doctor, see test results, request refills, and book appointments &mdash; without waiting on hold. The most common one is called <strong>MyChart</strong>, but your doctor might use a different name.</p>
+    { id: "m5-healthcare", title: "Your Doctor's Patient Portal (UCLA's myUCLAhealth)",
+      html: `<p>Most doctors' offices and hospitals have a <strong>patient portal</strong>: a website and app where you can message your doctor, see test results, request refills, book appointments, and pay medical bills &mdash; without waiting on hold. Each one has its own name, but most are built on the same system, called <strong>MyChart</strong>.</p>
 
 <div class="part"><span class="part-num">Step 1</span><span class="part-title">The pattern (works everywhere)</span></div>
 <div class="pattern-card">
   <div class="pattern-label">Patient portal pattern</div>
-  <div class="pattern-flow"><span class="stepchip">Open the portal (website or app)</span><span class="arrow">&#8594;</span><span class="stepchip">Sign In</span><span class="arrow">&#8594;</span><span class="stepchip">Pick from the menu: Messages, Visits, Test Results, Medications</span><span class="arrow">&#8594;</span><span class="stepchip">Review &rarr; Send</span></div>
+  <div class="pattern-flow"><span class="stepchip">Open the portal (website or MyChart app)</span><span class="arrow">&#8594;</span><span class="stepchip">Sign In</span><span class="arrow">&#8594;</span><span class="stepchip">Pick from the menu: Messages, Visits, Test Results, Medications, Billing</span><span class="arrow">&#8594;</span><span class="stepchip">Review &rarr; Send</span></div>
   
 </div>
 
-<div class="tip-box"><div class="box-label">Not sure which portal your doctor uses?</div><p>At your next visit or phone call, ask the front desk: <strong>"Do you have a patient portal, and can you help me sign up?"</strong> They do this all the time and can often send you a sign-up link by text or email.</p></div>
+<div class="tip-box"><div class="box-label">Not sure which portal a doctor uses?</div><p>At your next visit or phone call, ask the front desk: <strong>"Do you have a patient portal, and can you help me sign up?"</strong> They do this all the time and can often text or email you a sign-up link.</p></div>
 
-<div class="part"><span class="part-num">Step 2</span><span class="part-title">Your example: MyChart</span></div>
-<div class="steps"><div class="step"><div class="step-num">1</div><div class="step-content">On your iPhone, get the <strong>MyChart</strong> app from the App Store (made by "Epic Systems"). When you open it, search for your doctor's medical group by name. On a computer, use the MyChart link on your medical group's own website.</div></div><div class="step"><div class="step-num">2</div><div class="step-content">Sign in with the username and password you created (MyChart may also text you a code).</div></div><div class="step"><div class="step-num">3</div><div class="step-content">The main screen shows big buttons. The four you'll use most:</div></div></div>
+<div class="part"><span class="part-num">Step 2</span><span class="part-title">Your example: UCLA Health (myUCLAhealth)</span></div>
+<p>UCLA Health's portal is called <strong>myUCLAhealth</strong>. It's a MyChart portal with UCLA's name on it &mdash; so on your iPhone, you use the <strong>MyChart</strong> app.</p>
+<div class="steps"><div class="step"><div class="step-num">1</div><div class="step-content"><strong>On the computer:</strong> go to <strong>uclahealth.org</strong> and look in the <span class="landmark">top-right corner</span> for <strong>myUCLAhealth</strong> or <strong>Log in</strong>.</div></div><div class="step"><div class="step-num">2</div><div class="step-content"><strong>On your iPhone:</strong> get the <strong>MyChart</strong> app from the App Store (made by "Epic Systems"). When it asks for your provider, search <strong>UCLA Health</strong>.</div></div><div class="step"><div class="step-num">3</div><div class="step-content">Sign in with your <strong>myUCLAhealth username and password</strong>. It will send a code by text or email to confirm it's you.</div></div><div class="step"><div class="step-num">4</div><div class="step-content">The main screen shows big buttons. These are the ones you'll use most:</div></div></div>
 <table class="acct-table">
   <tr><th>Button</th><th>What it's for</th></tr>
   <tr><td><strong>Messages</strong></td><td>Write to your doctor's office about a non-urgent question, like a medication side effect. Usually answered in 1&ndash;3 business days.</td></tr>
   <tr><td><strong>Visits</strong> or <strong>Appointments</strong></td><td>See upcoming appointments, and often book or cancel one.</td></tr>
   <tr><td><strong>Test Results</strong></td><td>Lab and test results. They sometimes appear here <em>before</em> the doctor has a chance to call you &mdash; it's okay to wait for their explanation.</td></tr>
   <tr><td><strong>Medications</strong></td><td>Your list of prescriptions, with a <strong>Request refill</strong> button.</td></tr>
+  <tr><td><strong>Billing</strong> (Billing Summary)</td><td>See and pay UCLA Health medical bills.</td></tr>
 </table>
+
+<div class="tip-box"><div class="box-label">Need help with myUCLAhealth?</div><p>UCLA has a 24-hour help line just for the portal. To find the number, go to <strong>uclahealth.org</strong>, search for <strong>myUCLAhealth</strong>, and look for "Patient Help Desk." Or ask the front desk at your next UCLA visit &mdash; they can send you a sign-up link by text or email.</p></div>
 
 <div class="warning-box"><div class="box-label">Not for emergencies</div><p>Portal messages aren't watched every minute. For anything urgent, call the office. For an emergency, call 911.</p></div>
 
 <div class="part"><span class="part-num">Step 3</span><span class="part-title">Same pattern, different company</span></div>
 <div class="compare">
-  <div class="compare-col"><div class="c-head" style="background:#C8102E">MyChart (many medical groups)</div><ul><li><mark>Messages</mark> to talk to your doctor</li><li><mark>Visits</mark> for appointments</li><li><mark>Test Results</mark></li><li><mark>Medications</mark> &rarr; Request refill</li></ul></div><div class="compare-col"><div class="c-head" style="background:#006BA6">Kaiser Permanente (kp.org)</div><ul><li><mark>Message center</mark> &rarr; Email your doctor</li><li><mark>Appointments</mark></li><li><mark>Test results</mark></li><li><mark>Pharmacy</mark> &rarr; Refill prescriptions</li></ul></div>
-</div><p><em>Different names on the buttons, but the same four jobs every time.</em></p>
+  <div class="compare-col"><div class="c-head" style="background:#2774AE">myUCLAhealth (UCLA Health)</div><ul><li><mark>Messages</mark> to talk to your doctor</li><li><mark>Visits</mark> for appointments</li><li><mark>Test Results</mark></li><li><mark>Medications</mark> &rarr; Request refill</li></ul></div><div class="compare-col"><div class="c-head" style="background:#006BA6">Kaiser Permanente (kp.org)</div><ul><li><mark>Message center</mark> &rarr; Email your doctor</li><li><mark>Appointments</mark></li><li><mark>Test results</mark></li><li><mark>Pharmacy</mark> &rarr; Refill prescriptions</li></ul></div>
+</div><p><em>Different names on the buttons, but the same jobs every time. Cedars-Sinai, Providence, and many other medical groups also use MyChart &mdash; so once you know myUCLAhealth, you already know theirs.</em></p>
 
 <div class="part"><span class="part-num">Step 4</span><span class="part-title">Your turn: a company you've never seen</span></div>
 <div class="spot" data-hint="Refills are usually with your list of medications or prescriptions.">
@@ -198,7 +202,7 @@ GUIDE.addModule({
     <div class="s-body"><p>Hello, Celine. You have no new messages.</p></div>
     
   </div>
-  <div class="spot-msg yes">Yes! <strong>My Prescriptions</strong> is this portal's version of MyChart's "Medications." Inside you'll find a "Request refill" button.</div>
+  <div class="spot-msg yes">Yes! <strong>My Prescriptions</strong> is this portal's version of myUCLAhealth's "Medications." Inside you'll find a "Request refill" button.</div>
   <div class="spot-msg hint"></div>
   <div class="spot-actions"><button class="bar-btn" data-action="spot-show">Show me</button></div>
 </div>` },
@@ -352,8 +356,8 @@ GUIDE.addModule({
   <div class="spot-actions"><button class="bar-btn" data-action="spot-show">Show me</button></div>
 </div>` },
 
-    { id: "m5-travel", title: "Booking Travel & Tickets",
-      html: `<p>Booking flights, hotels, and event tickets online follows a very consistent pattern:</p>
+    { id: "m5-travel", title: "Booking Flights & Hotels",
+      html: `<p>Booking flights and hotels online follows a very consistent pattern. (For concert and show tickets, see the Ticketmaster lesson.)</p>
 <div class="diagram">
 <div class="diagram-title">The booking pattern (same every time)</div>
 <div class="diagram-row">
@@ -388,6 +392,10 @@ GUIDE.addModule({
 <div class="step-num">5</div>
 <div class="step-content"><strong>Review carefully before clicking "Book":</strong> Check the dates, passenger names, and total price on the summary screen before you confirm.</div>
 </div>
+</div>
+<div class="key-concept">
+<div class="box-label">Same pattern, different company</div>
+<p>Hotels (like Marriott.com or Booking.com), Amtrak, and rental cars all use the same four steps: <strong>search &rarr; choose &rarr; enter your information &rarr; review and confirm</strong>. Nothing is booked until you click the final button on the review page.</p>
 </div>
 <div class="tip-box">
 <div class="box-label">After booking anything</div>
@@ -441,7 +449,7 @@ GUIDE.addModule({
 </div>
 <div class="step">
 <div class="step-num">4</div>
-<div class="step-content"><strong>You may see a button that says "Join with Video"</strong> — tap it. Then tap <strong>"Call using Internet Audio"</strong> so they can hear you.</div>
+<div class="step-content"><strong>You may see a button that says "Join with Video"</strong> — tap it. If it asks how to connect your audio, tap <strong>"Wi-Fi or Cellular Data"</strong> (on some versions, "Call using Internet Audio") so they can hear you.</div>
 </div>
 <div class="step">
 <div class="step-num">5</div>
@@ -476,7 +484,7 @@ GUIDE.addModule({
 <div class="tab-content" id="print-phone">
 <p><strong>Printing from your iPhone or iPad:</strong></p>
 <p>Your iPhone/iPad can print wirelessly if your printer supports <strong>AirPrint</strong> (most modern printers do). Here's how:</p>
-<p style="margin-top: 8px;"><strong>(1)</strong> Open whatever you want to print (a photo, an email, a webpage, a document). <strong>(2)</strong> Look for the <strong>Share button</strong> — it's a square with an upward arrow (▷↑). It might be at the top or bottom of the screen. <strong>(3)</strong> In the menu that appears, scroll down and tap <strong>"Print."</strong> <strong>(4)</strong> Select your printer, choose the number of copies, and tap <strong>"Print."</strong></p>
+<p style="margin-top: 8px;"><strong>(1)</strong> Open whatever you want to print (a photo, an email, a webpage, a document). <strong>(2)</strong> Look for the <strong>Share button</strong> — it's a square with an arrow pointing up. It might be at the top or bottom of the screen. <strong>(3)</strong> In the menu that appears, scroll down and tap <strong>"Print."</strong> <strong>(4)</strong> Select your printer, choose the number of copies, and tap <strong>"Print."</strong></p>
 <p style="margin-top: 8px; color: var(--text-light); font-style: italic;">Your phone and printer need to be on the same Wi-Fi network for this to work.</p>
 </div>
 </div>

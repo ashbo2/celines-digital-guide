@@ -48,7 +48,7 @@ GUIDE.addModule({
 <p style="margin-bottom: 8px;"><strong>⚠️ "Click here to verify your password / account number"</strong> — No real company will ever ask for your password by email.</p>
 <p style="margin-bottom: 8px;"><strong>⚠️ The email address looks weird</strong> — It says it's from your bank, but the sender's address is something like "support@bank-secure-login-verify.xyz" instead of a normal address.</p>
 <p style="margin-bottom: 8px;"><strong>⚠️ "You've won $1,000,000!"</strong> — If you didn't enter a contest, you didn't win.</p>
-<p style="margin-bottom: 0;"><strong>⚠️ Lots of spelling and grammar mistakes</strong> — Real companies proofread their emails.</p>
+<p style="margin-bottom: 0;"><strong>⚠️ Lots of spelling and grammar mistakes</strong> — A common sign, but not a reliable one: many scam emails today are written perfectly. A clean, professional-looking email is <strong>not</strong> proof it's real.</p>
 </div>
 <div class="key-concept">
 <div class="box-label">The golden rule of online safety</div>
@@ -92,7 +92,7 @@ GUIDE.addModule({
 <div class="steps">
 <div class="step">
 <div class="step-num" style="background: var(--forest-green);">✔</div>
-<div class="step-content"><strong>"Accept cookies?"</strong> — This is fine. Nearly every website shows this. Just click "Accept" or "OK" and move on. "Cookies" are how websites remember you.</div>
+<div class="step-content"><strong>"Accept cookies?"</strong> — This is fine. Nearly every website shows this. Click "Accept," "OK," or "Reject" &mdash; any of them is fine &mdash; and move on. "Cookies" are how websites remember you.</div>
 </div>
 <div class="step">
 <div class="step-num" style="background: var(--forest-green);">✔</div>
@@ -100,7 +100,7 @@ GUIDE.addModule({
 </div>
 <div class="step">
 <div class="step-num" style="background: var(--warm-rose);">✕</div>
-<div class="step-content"><strong>"Your computer has a virus! Call this number!"</strong> — This is <strong>ALWAYS</strong> a scam. Close the tab immediately. Your computer is fine. Real security warnings come from your antivirus software, not from websites.</div>
+<div class="step-content"><strong>"Your computer has a virus! Call this number!"</strong> — This is <strong>ALWAYS</strong> a scam. Close the tab immediately. Your computer is fine. Real security warnings come from <strong>Windows Security</strong> (built into your computer), not from websites &mdash; and they never ask you to call a phone number.</div>
 </div>
 <div class="step">
 <div class="step-num" style="background: var(--warm-rose);">✕</div>
@@ -166,7 +166,7 @@ GUIDE.addModule({
 </div>
 <div class="tip-box">
 <div class="box-label">Save your work often</div>
-<p>If you're typing something important (a letter, an email, filling out a form), it's a good habit to save frequently. On the computer, press <strong>Ctrl+S</strong> (hold Ctrl, press S) to save your work. This way, if something freezes, you won't lose much. In a web browser, your typing in forms is usually NOT saved automatically — so if you're filling out a long form online, consider typing your answers in the Notes app first, then copying them over.</p>
+<p>If you're typing something important (a letter, an email, filling out a form), it's a good habit to save frequently. On the computer, press <strong>Ctrl+S</strong> (hold Ctrl, press S) to save your work. This way, if something freezes, you won't lose much. In a web browser, your typing in forms is usually NOT saved automatically — so if you're filling out a long form online, consider typing your answers in Notepad or Word first, then copying them over.</p>
 </div>` },
 
     { id: "m6-storage", title: "Running Out of Storage",
@@ -179,7 +179,7 @@ GUIDE.addModule({
 <div class="tab-content active" id="storage-phone">
 <p><strong>Check what's using space:</strong> Settings → General → iPhone Storage. You'll see a colorful bar showing what's taking up room (usually Photos, Apps, and Messages are the biggest).</p>
 <p style="margin-top: 8px;"><strong>Easy ways to free up space:</strong></p>
-<p><strong>(1) Delete old photos and videos</strong> — Open the Photos app, find photos you don't need, tap "Select" (top-right), tap the ones to delete, then tap the trash icon. Don't forget to also delete them from "Recently Deleted" (in the Albums tab) to truly free the space.</p>
+<p><strong>(1) Delete old photos and videos</strong> — Open the Photos app, find photos you don't need, tap "Select" (top-right), tap the ones to delete, then tap the trash icon. Don't forget to also empty "Recently Deleted" to truly free the space (scroll down in the Photos app &mdash; it's under <strong>Utilities</strong>).</p>
 <p><strong>(2) Delete apps you don't use</strong> — Press and hold an app icon on the Home Screen until a menu appears. Tap "Remove App" → "Delete App."</p>
 <p><strong>(3) Clear old text messages</strong> — Open Messages, swipe left on old conversations, and tap "Delete."</p>
 </div>
@@ -226,7 +226,7 @@ GUIDE.addModule({
 <div class="tip-box">
 <div class="box-label">Take a screenshot!</div>
 <p>A screenshot is a picture of what's on your screen. It's the best way to show someone exactly what you're seeing.</p>
-<p style="margin-top: 8px;"><strong>On your computer:</strong> Press the <strong>Print Screen</strong> key (sometimes labeled "PrtScn" — it's near the top-right of your keyboard). Then open an email and press <strong>Ctrl+V</strong> to paste it into the email.</p>
+<p style="margin-top: 8px;"><strong>On your computer:</strong> Press the <strong>Print Screen</strong> key (sometimes labeled "PrtScn" — near the top-right of your keyboard), or hold the <strong>Windows key + Shift</strong> and tap <strong>S</strong>. The screen dims: drag a box around what you want to show. It's now copied &mdash; open an email and press <strong>Ctrl+V</strong> to paste it in.</p>
 <p style="margin-top: 8px;"><strong>On your iPhone/iPad:</strong> Press the <strong>Side button</strong> and the <strong>Volume Up button</strong> at the same time, quickly. You'll see a flash and hear a shutter sound. The screenshot is saved in your Photos app, and you can share it by text or email.</p>
 </div>
 <h4>Calling Tech Support</h4>
@@ -259,7 +259,7 @@ GUIDE.addModule({
 <div class="steps">
 <div class="step">
 <div class="step-num">1</div>
-<div class="step-content"><strong>Call or text one of the kids</strong> and let them know you need help with your computer.</div>
+<div class="step-content"><strong>Call or text Ari, Anijke, or Asher</strong> and let them know you need help with your computer.</div>
 </div>
 <div class="step">
 <div class="step-num">2</div>

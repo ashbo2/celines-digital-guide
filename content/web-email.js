@@ -50,7 +50,7 @@ GUIDE.addModule({
 </div>
 <div class="key-concept">
 <div class="box-label">The address bar does two things</div>
-<p>The long bar at the top of the browser is called the <strong>address bar</strong>. It does two things: <strong>(1)</strong> You can type a specific web address (like <strong>www.aol.com</strong>) to go directly to that website. <strong>(2)</strong> You can type regular words (like <strong>"weather this week"</strong>) and it will search Google for you. It's both a GPS and a search engine in one bar!</p>
+<p>The long bar at the top of the browser is called the <strong>address bar</strong>. It does two things: <strong>(1)</strong> You can type a specific web address (like <strong>www.aol.com</strong>) to go directly to that website. <strong>(2)</strong> You can type regular words (like <strong>"weather this week"</strong>) and it will search Google for you. It's an address box and a search box in one!</p>
 </div>
 <h4>Chrome vs. Edge: Why It Matters Which Browser You Use</h4>
 <p>Your computer actually has <strong>two different web browsers</strong> installed on it. Think of them as two different windows in your house — they both look out at the same town, and they have the same basic parts (address bar at the top, Back button at the top-left, tabs across the top). But your saved passwords and bookmarks are only kept in one of them.</p>
@@ -68,7 +68,7 @@ GUIDE.addModule({
 <div style="font-size: 2.0rem; margin-bottom: 6px;">🌏</div>
 <div style="font-weight: 700; color: var(--text-medium); font-size: 0.9rem;">Microsoft Edge</div>
 <div style="font-size: 0.9rem; color: var(--text-medium); margin-top: 4px;">Blue-green swirl icon</div>
-<div style="font-size: 0.9rem; color: var(--text-light); margin-top: 6px; font-weight: 600;">❌ Not your browser</div>
+<div style="font-size: 0.9rem; color: var(--text-light); margin-top: 6px; font-weight: 600;">Works fine, but your saved stuff isn't here</div>
 <div style="font-size: 0.9rem; color: var(--text-medium); margin-top: 4px;">Came with the computer. Your passwords and bookmarks are NOT here.</div>
 </div>
 </div>
@@ -90,18 +90,18 @@ GUIDE.addModule({
 <div class="diagram">
 <div class="diagram-title">How to read a web address</div>
 <div style="font-size: 1.0rem; margin: 16px 0; font-family: 'Courier Prime', monospace; word-break: break-all; letter-spacing: 0.5px;">
-<span style="color: var(--text-light);">https://</span><span style="color: var(--deep-plum); font-weight: 700;">www.bankofamerica</span><span style="color: var(--warm-rose); font-weight: 700;">.com</span><span style="color: var(--soft-teal);">/online-banking/sign-in</span>
+<span style="color: var(--text-light);">https://</span><span style="color: var(--deep-plum); font-weight: 700;">www.wellsfargo</span><span style="color: var(--warm-rose); font-weight: 700;">.com</span><span style="color: var(--soft-teal);">/online-banking/sign-in</span>
 </div>
 <div style="text-align: left; font-size: 0.9rem; padding: 0 10px; line-height: 2;">
-<p><span style="color: var(--text-light); font-weight: 600;">https://</span> — The "s" means the connection is <strong>secure</strong>. Look for this (and the lock icon 🔒) whenever you enter personal information.</p>
-<p><span style="color: var(--deep-plum); font-weight: 600;">www.bankofamerica</span> — The <strong>name</strong> of the website. This is what tells you who owns the site.</p>
+<p><span style="color: var(--text-light); font-weight: 600;">https://</span> — The "s" means the connection is <strong>private</strong> (nobody can listen in along the way). Almost every website has this now &mdash; <strong>including scam websites</strong> &mdash; so it doesn't prove a website is real.</p>
+<p><span style="color: var(--deep-plum); font-weight: 600;">www.wellsfargo</span> — The <strong>name</strong> of the website. This is what tells you who owns the site.</p>
 <p><span style="color: var(--warm-rose); font-weight: 600;">.com</span> — The <strong>type</strong>. ".com" is most common. ".org" = organizations. ".gov" = government. ".edu" = schools.</p>
 <p><span style="color: var(--soft-teal); font-weight: 600;">/online-banking/sign-in</span> — The <strong>specific page</strong> within the website, like a room number in a building.</p>
 </div>
 </div>
 <div class="warning-box">
 <div class="box-label">Safety rule</div>
-<p>Before entering any personal information (like a password or credit card), look at the address bar and check two things: <strong>(1)</strong> Is there a lock icon 🔒? <strong>(2)</strong> Does the website name look correct? For example, <strong>www.bankofamerica.com</strong> is real, but <strong>www.bank0famerica-secure.com</strong> is fake (notice the zero instead of "o" and the extra words). When in doubt, type the address yourself instead of clicking a link.</p>
+<p>Before entering any personal information (like a password or credit card), look at the address bar and check one thing: <strong>is the website name exactly right?</strong> For example, <strong>www.wellsfargo.com</strong> is real, but <strong>www.we11sfargo-secure.com</strong> is fake (notice the number ones instead of the letter "l," and the extra word). The name is what matters &mdash; a lock or a little icon next to the address only means the connection is private, and scam websites have that too. When in doubt, type the address yourself instead of clicking a link.</p>
 </div>` },
     { id: "m3-tabs", title: "Tabs: Having Multiple Pages Open at Once",
       html: `<p>Tabs are one of the most useful features of a web browser. They let you have <strong>multiple websites open at the same time</strong> — like having several books open on your desk, each to a different page.</p>
@@ -115,7 +115,7 @@ GUIDE.addModule({
 </div>
 <div class="browser-toolbar">
 <div class="browser-nav-btns"><span>←</span> <span>→</span> <span>↻</span></div>
-<div class="browser-address"><span class="lock">🔒</span> https://www.bankofamerica.com</div>
+<div class="browser-address"><span class="lock">🔒</span> https://www.wellsfargo.com</div>
 </div>
 </div>
 <div class="browser-body" style="text-align: center; padding: 30px; color: var(--text-light); font-size: 0.9rem;">
@@ -142,7 +142,7 @@ GUIDE.addModule({
 </div>` },
     { id: "m3-aol", title: "Your AOL Mail — A Full Tour",
       html: `<p>You already know how to read and send emails. Let's take a closer look at everything AOL Mail can do, so you feel like a pro.</p>
-<p>To get to your email, open your web browser and go to <strong>mail.aol.com</strong> (type this in the address bar). Here's what the screen looks like:</p>
+<p>Remember: your email lives at AOL, across town &mdash; not on your computer. To visit it, open Chrome and go to <strong>mail.aol.com</strong> (type this in the address bar). Here's what the screen looks like:</p>
 <div class="browser-mockup">
 <div class="browser-chrome">
 <div class="browser-tabs">
@@ -253,7 +253,11 @@ GUIDE.addModule({
 </div>
 <div class="step">
 <div class="step-num">3</div>
-<div class="step-content"><strong>Watch out for ads.</strong> The first few results on Google often say <strong>"Sponsored"</strong> or <strong>"Ad"</strong> in small text. These are paid advertisements, not the most helpful results. Scroll past them to the regular results below.</div>
+<div class="step-content"><strong>Watch out for ads.</strong> The first few results on Google often say <strong>"Sponsored"</strong> or <strong>"Ad"</strong> in small text. These are paid advertisements, not the most helpful results &mdash; and scammers sometimes buy ads with fake phone numbers. Scroll past them to the regular results below.</div>
+</div>
+<div class="step">
+<div class="step-num">&#129302;</div>
+<div class="step-content"><strong>About the "AI Overview" box.</strong> Google sometimes puts a summary at the very top, labeled <strong>"AI Overview."</strong> It can be handy, but it's sometimes wrong. For anything important &mdash; money, health, phone numbers &mdash; click through to the company's real website instead.</div>
 </div>
 <div class="step">
 <div class="step-num">4</div>

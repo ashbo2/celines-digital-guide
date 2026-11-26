@@ -25,7 +25,8 @@ GUIDE.addPage("accounts", {
   <tr><td><strong>Social Security</strong></td><td class="addr">ssa.gov/myaccount</td><td>Payments, benefit letters, tax forms. Sign in with Login.gov or ID.me.</td></tr>
   <tr><td><strong>Medicare</strong></td><td class="addr">medicare.gov</td><td>Claims, plan, print your card. Sign in with Login.gov, ID.me, or CLEAR.</td></tr>
   <tr><td><strong>Login.gov</strong></td><td class="addr">login.gov</td><td>The government "sign-in helper" used by Social Security and Medicare</td></tr>
-  <tr><td><strong>Your doctor's portal</strong></td><td class="addr">MyChart app</td><td>Ask your doctor's front desk which portal they use and for a sign-up link.</td></tr>
+  <tr><td><strong>UCLA Health (myUCLAhealth)</strong></td><td class="addr">uclahealth.org</td><td>Messages, appointments, test results, refills, medical bills. On iPhone, use the <strong>MyChart</strong> app and choose UCLA Health.</td></tr>
+  <tr><td><strong>Other doctors</strong></td><td class="addr">(ask the office)</td><td>Ask the front desk which patient portal they use and for a sign-up link.</td></tr>
 </table>
 
 <h2 style="color:var(--deep-plum);font-size:1.3rem;margin:24px 0 6px">Shopping, food &amp; fun</h2>

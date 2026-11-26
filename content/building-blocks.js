@@ -44,7 +44,7 @@ GUIDE.addModule({
 <p style="font-size: 0.9rem; margin-bottom: 0;"><span style="color: var(--soft-teal); text-decoration: underline; cursor: pointer;">Forgot your password?</span></p>
 </div>
 <h4>4. Menus</h4>
-<p>Menus are <strong>lists of choices</strong>. They work just like the table of contents in a book, or the menu at a restaurant — they show you your options. Some menus are always visible on the screen (especially at the top of websites), while others are hidden until you click on them. The hidden ones are sometimes called "dropdown menus" because they drop down when you click.</p>
+<p>Menus are <strong>lists of choices</strong>. They work just like the table of contents in a book, or the menu at a restaurant — they show you your options. Some menus are always visible on the screen (especially at the top of websites), while others are hidden until you click on them. The hidden ones are sometimes called "drop-down menus" because they drop down when you click.</p>
 <p>You'll often see three little horizontal lines ( ☰ ) — this icon is sometimes called the "hamburger menu" (because it looks a bit like a hamburger bun). Tapping or clicking those lines reveals a hidden menu.</p>
 <h4>5. Icons</h4>
 <p>Icons are <strong>small pictures that represent something</strong>. They're like the symbols on road signs — a red octagon means "stop" even without the word. Once you learn a few common icons, you'll see them everywhere:</p>
@@ -69,10 +69,10 @@ GUIDE.addModule({
 <p>Tabs are like the labeled dividers in a filing cabinet or a binder. They let you <strong>switch between different sections</strong> without leaving the page. You'll see tabs at the top of your web browser (so you can have multiple websites open at once) and inside many apps and websites.</p>
 <h4>7. Pop-ups (Dialog Boxes)</h4>
 <p>These are small windows that <strong>appear on top of what you're looking at</strong>. They might ask you a question ("Are you sure you want to delete this?"), show you a message, or ask you to accept cookies. They usually have a button to close them — look for an "X" in the corner, or a button that says "OK," "Accept," or "Close."</p>
-<p>Pop-ups can feel intrusive, but most are harmless. We'll talk about which ones to worry about in Module 6.</p>
+<p>Pop-ups can feel intrusive, but most are harmless. The lesson <a href="#/lesson/m6-popups">Pop-ups &amp; Cookie Messages</a> explains which ones to worry about.</p>
 <div class="key-concept">
 <div class="box-label">The big idea</div>
-<p><strong>Every website, every app, and every screen is just a different arrangement of these same 7 building blocks.</strong> When you see a new screen for the first time, take a breath and look for the buttons, text fields, links, menus, icons, and tabs. Once you spot them, you'll know exactly what that page is asking you to do. It's like walking into any kitchen — the fridge, stove, and sink are always there, just in different places.</p>
+<p><strong>Every website, every app, and every screen is just a different arrangement of these same 7 building blocks.</strong> When you see a new screen for the first time, take a breath and look for the buttons, text fields, links, menus, icons, tabs, and pop-ups. Once you spot them, you'll know exactly what that page is asking you to do. It's like walking into any kitchen — the fridge, stove, and sink are always there, just in different places.</p>
 </div>` },
 
     { id: "m1-zones", title: "The Three Zones: How Every Screen Is Organized",
@@ -96,7 +96,7 @@ GUIDE.addModule({
 <div style="background: white; padding: 50px 20px; text-align: center; font-size: 0.9rem; color: var(--text-medium); min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
 <strong style="font-size: 1.1rem; color: var(--text-dark);">Main Content Area</strong>
 <span>The article, form, product list, or whatever you came here to see</span>
-<div style="background: var(--win-blue); color: white; padding: 8px 24px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; display: inline-block;">Call to Action Button</div>
+<div style="background: var(--win-blue); color: white; padding: 8px 24px; border-radius: 6px; font-size: 0.9rem; font-weight: 600; display: inline-block;">Big button (like "Pay Now")</div>
 </div>
 </div>
 <div style="background: #2C3E50; color: rgba(255,255,255,0.7); padding: 14px 20px; font-size: 0.9rem; display: flex; justify-content: space-between;">

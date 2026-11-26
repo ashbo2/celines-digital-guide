@@ -36,28 +36,28 @@ GUIDE.addModule({
 <p>Let's break down what you're seeing:</p>
 <div class="steps">
 <div class="step">
-<div class="step-num">1</div>
+<div class="step-num">&#128444;&#65039;</div>
 <div class="step-content"><strong>The Desktop background (wallpaper)</strong> — The big picture that fills the screen. It's just decoration — like a tablecloth. You can ignore it.</div>
 </div>
 <div class="step">
-<div class="step-num">2</div>
+<div class="step-num">&#128193;</div>
 <div class="step-content"><strong>Icons on the desktop</strong> — The small pictures scattered on the desktop. Each one represents a program, file, or folder. <strong>Double-click</strong> any icon to open it (click twice, quickly).</div>
 </div>
 <div class="step">
-<div class="step-num">3</div>
-<div class="step-content"><strong>The Taskbar (the strip at the very bottom)</strong> — This is like the dashboard of your car. It's always there, no matter what you're doing. It shows you: the Start button (far left), a search bar, shortcut icons for your favorite programs, and — over on the right — the clock, Wi-Fi signal, and volume control.</div>
+<div class="step-num">&#9644;</div>
+<div class="step-content"><strong>The Taskbar (the strip at the very bottom)</strong> — It's always there, no matter what you're doing. It shows you: the Start button (far left or middle), a search bar, shortcut icons for your favorite programs, and — over on the right — the clock, Wi-Fi signal, and volume control.</div>
 </div>
 <div class="step">
-<div class="step-num">4</div>
-<div class="step-content"><strong>The Start button</strong> — The four-square Windows logo in the bottom-left corner. Click it once to open the Start Menu (we'll cover that next). This is the most important button on your entire computer — it's your gateway to everything.</div>
+<div class="step-num">&#8862;</div>
+<div class="step-content"><strong>The Start button</strong> — The four-square Windows logo (&#8862;). On many computers it's at the far left of the taskbar; on newer ones it sits in the <strong>middle</strong> of the taskbar, with your other icons beside it. Either way, it works the same. Click it once to open the Start Menu (we'll cover that next). This is the most important button on your entire computer — it's your gateway to everything.</div>
 </div>
 </div>
 <div class="analogy">
 <div class="box-label">Think of it this way</div>
 <p>Your desktop is like your physical desk at home. The icons on it are like papers and folders you've placed on top for easy access. The <strong>Taskbar</strong> is like the top drawer of your desk — it holds your most-used tools. And the <strong>Start button</strong> is like the key to your filing cabinet — it opens up everything else.</p>
 </div>` },
-    { id: "m2-start", title: "The Start Menu: Your Master Directory",
-      html: `<p>When you click the <strong>Start button</strong> (the Windows logo in the bottom-left corner), a panel slides up. This is the <strong>Start Menu</strong>. Think of it as a complete directory of everything installed on your computer.</p>
+    { id: "m2-start", title: "The Start Menu: A List of Everything on Your Computer",
+      html: `<p>When you click the <strong>Start button</strong> (the four-square Windows logo on the taskbar), a panel slides up. This is the <strong>Start Menu</strong>. Think of it as a complete directory of everything installed on your computer.</p>
 <div class="win-window" style="max-width: 380px; margin: 20px auto;">
 <div style="background: var(--win-surface); padding: 16px; border-radius: 8px;">
 <div style="display: flex; gap: 8px; margin-bottom: 12px;">
@@ -124,7 +124,7 @@ GUIDE.addModule({
 <div style="margin-left: 56px;">📄 prescription_refill_form.pdf</div>
 </div>
 </div>
-<p>A <strong>file</strong> is any individual thing stored on your computer — a document, a photo, a PDF, a spreadsheet. Every file has a name and a <strong>type</strong> (shown by the letters after the dot at the end of the name). For example:</p>
+<p>A <strong>file</strong> is any individual thing stored on your computer — a document, a photo, a PDF, a spreadsheet. Every file has a name and a <strong>type</strong>. Sometimes the type shows as a few letters after a dot at the end of the name &mdash; but your computer often hides those letters, so you'll usually recognize the type by its <strong>little picture (icon)</strong> instead. For example:</p>
 <div style="background: var(--win-surface); border-radius: 10px; padding: 16px 20px; margin: 12px 0; font-size: 0.9rem;">
 <p style="margin-bottom: 6px;"><strong>vacation_photo.jpg</strong> — A photo (.jpg means it's an image)</p>
 <p style="margin-bottom: 6px;"><strong>tax_return_2024.pdf</strong> — A document (.pdf is the most common document format)</p>
@@ -271,7 +271,7 @@ GUIDE.addModule({
 <div class="win-settings-sidebar">
 <div class="win-settings-item"><span>💻</span> System</div>
 <div class="win-settings-item"><span>📶</span> Network &amp; Internet</div>
-<div class="win-settings-item selected"><span>🔇</span> Bluetooth &amp; Devices</div>
+<div class="win-settings-item selected"><span>📱</span> Bluetooth &amp; Devices</div>
 <div class="win-settings-item"><span>🎨</span> Personalization</div>
 <div class="win-settings-item"><span>🔐</span> Privacy &amp; Security</div>
 <div class="win-settings-item"><span>🔄</span> Windows Update</div>

@@ -127,7 +127,7 @@ GUIDE.addModule({
 </div>
 <p>To <strong>close Control Center</strong> and go back to what you were doing, just swipe up from the bottom or tap anywhere outside the Control Center panel.</p>` },
 
-    { id: "m4-settings", title: "iOS Settings",
+    { id: "m4-settings", title: "Your iPhone's Settings",
       html: `<p>The <strong>Settings app</strong> (the gray gear icon ⚙️) is the full control panel for your iPhone and iPad. Tap it on the Home Screen to open it.</p>
 <div class="iphone" style="width: 260px;">
 <div class="iphone-screen" style="min-height: 420px;">
@@ -228,7 +228,7 @@ GUIDE.addModule({
 </div>
 <div class="step">
 <div class="step-num">5</div>
-<div class="step-content"><strong>Tap "Get"</strong> (if it's free) or the price button. You may need to confirm with Face ID (look at the phone), Touch ID (fingerprint), or your Apple ID password.</div>
+<div class="step-content"><strong>Tap "Get"</strong> (if it's free) or the price button. You may need to confirm with Face ID (look at the phone), Touch ID (fingerprint), or your Apple Account password.</div>
 </div>
 <div class="step">
 <div class="step-num">6</div>
@@ -237,7 +237,7 @@ GUIDE.addModule({
 </div>
 <div class="warning-box">
 <div class="box-label">Only get apps from the App Store</div>
-<p>Never download apps from a website or from a link someone sends you in a text or email. The App Store is the only safe place to get apps for your iPhone and iPad. Apple checks every app for safety before allowing it in the store.</p>
+<p>Never download apps from a website or from a link someone sends you in a text or email. The App Store is the only safe place to get apps for your iPhone and iPad. Apple reviews apps before allowing them in the store, but copycats occasionally slip through &mdash; so check that the name under the app matches the company.</p>
 </div>` },
 
     { id: "m4-apps-vs-web", title: "Apps vs. Websites on Your Phone: Two Doors to the Same Place",

@@ -61,13 +61,14 @@ GUIDE.addTasks([
 
   /* ── Health & government ── */
   { id: "message-doctor", group: "Health & government", icon: "&#129658;", title: "Message my doctor or request a refill",
-    keywords: "mychart patient portal doctor message refill prescription test results appointment medication",
-    pattern: "Portal (MyChart, etc.) &rarr; Sign In &rarr; Messages / Medications / Visits",
+    keywords: "ucla myuclahealth myhealth mychart patient portal doctor message refill prescription test results appointment medication medical bill",
+    pattern: "Portal (myUCLAhealth, MyChart, etc.) &rarr; Sign In &rarr; Messages / Medications / Visits / Billing",
     steps: [
-      "Open the <strong>MyChart</strong> app (or your medical group's portal) and sign in.",
+      "For UCLA: open the <strong>MyChart</strong> app on your iPhone (choose UCLA Health), or go to <strong>uclahealth.org</strong> &rarr; myUCLAhealth. Sign in with your myUCLAhealth username and password.",
       "To ask a question: tap <strong>Messages</strong> &rarr; new message.",
       "To refill: tap <strong>Medications</strong> &rarr; <strong>Request refill</strong>.",
       "To see or book appointments: tap <strong>Visits</strong> or <strong>Appointments</strong>.",
+      "To pay a UCLA medical bill: tap <strong>Billing</strong>.",
     ],
     warn: "Portal messages aren't for emergencies. Call the office for anything urgent, or 911 in an emergency.",
     lessons: ["m5-healthcare"] },
