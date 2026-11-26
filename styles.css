@@ -1058,3 +1058,37 @@ mark { background: #F5EEF8; color: var(--deep-plum); font-weight: 700; padding: 
   .pattern-card .pattern-flow span.arrow { transform: rotate(90deg); margin-left: 18px; }
   .part { flex-wrap: wrap; gap: 6px; }
 }
+
+/* ── Search page (v3) ── */
+.search-row { display: flex; gap: 10px; align-items: stretch; margin: 8px 0 12px; }
+.search-row .search-box { margin: 0; flex: 1; }
+.search-row .search-go { font-size: 1.05rem; padding: 0 24px; }
+.examples { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 22px; }
+.examples > span { color: var(--text-medium); font-weight: 600; margin-right: 4px; }
+.example-chip {
+  font-family: 'Open Sans', sans-serif; font-size: 0.95rem; min-height: 44px; padding: 6px 14px;
+  border-radius: 22px; border: 2px solid #D7C4E2; background: #fff; color: var(--deep-plum); cursor: pointer;
+}
+.example-chip:hover { background: #F8F4FC; border-color: var(--deep-plum); }
+details.all-tasks { margin-top: 28px; }
+details.all-tasks > summary {
+  cursor: pointer; font-weight: 700; color: var(--deep-plum); padding: 12px 16px; min-height: 48px;
+  background: #fff; border: 2px solid #D7C4E2; border-radius: 12px; display: inline-block;
+}
+@media (max-width: 760px) {
+  .search-row { flex-direction: column; }
+  .search-row .search-go { min-height: 56px; }
+}
+
+/* ── Always-visible, easy-to-see scroll bar (computer) ── */
+html { overflow-y: scroll; overflow-x: hidden; } /* keep it on screen even on short pages */
+body { overflow-x: visible; }                    /* (body overflow would break the sticky top bar) */
+html::-webkit-scrollbar { width: 22px; }
+html::-webkit-scrollbar-track { background: #EFE5F5; border-left: 1px solid #DCCBE6; }
+html::-webkit-scrollbar-thumb { background: #7A4A90; border-radius: 11px; border: 3px solid #EFE5F5; min-height: 60px; }
+html::-webkit-scrollbar-thumb:hover { background: var(--deep-plum); }
+@supports (-moz-appearance: none) { html { scrollbar-color: #7A4A90 #EFE5F5; } }
+
+/* ── "How far down the page am I" line under the top bar (helps on iPhone, where scroll bars hide) ── */
+.page-progress { height: 6px; background: #EFE5F5; }
+.page-progress > div { height: 100%; width: 0; background: var(--deep-plum); border-radius: 0 3px 3px 0; }

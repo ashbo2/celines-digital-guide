@@ -301,6 +301,17 @@ GUIDE.addTasks([
     ],
     lessons: ["m4-phone"] },
 
+  { id: "facetime", group: "Your iPhone", icon: "&#128249;", title: "Make a FaceTime video call",
+    keywords: "facetime video call see face family son daughter grandkids",
+    steps: [
+      "Open the green <strong>FaceTime</strong> app (a white video camera).",
+      "Tap <strong>New FaceTime</strong>, type the person's name, and tap the green <strong>FaceTime</strong> button.",
+      "Or, from the Phone app: open the person's contact and tap the <strong>video</strong> button.",
+      "To hang up, tap the red button. The microphone button mutes you; the camera button turns your video off.",
+    ],
+    tip: "Hold the phone at arm's length, in a well-lit room, so they can see your face.",
+    lessons: ["m5-videocalls"] },
+
   { id: "voicemail", group: "Your iPhone", icon: "&#128236;", title: "Listen to voicemail or block a number",
     keywords: "voicemail message block number spam caller unknown",
     steps: [
