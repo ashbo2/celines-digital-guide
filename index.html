@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127800;</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700;800&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -22,23 +22,25 @@
       <button class="bar-btn" data-action="size-up" aria-label="Make text bigger" style="font-size:1.15rem">A+</button>
     </span>
   </div>
+  <div class="page-progress" aria-hidden="true"><div id="page-progress-fill"></div></div>
 </header>
 
 <main id="app"><div class="page"><p>Loading your guide&hellip;</p></div></main>
 
 <noscript><div class="page"><p>This guide needs JavaScript turned on. Please ask Asher for help.</p></div></noscript>
 
-<script src="app.js"></script>
-<!-- Lessons, in order -->
-<script src="content/start-here.js"></script>
-<script src="content/building-blocks.js"></script>
-<script src="content/windows.js"></script>
-<script src="content/web-email.js"></script>
-<script src="content/iphone.js"></script>
-<script src="content/everyday.js"></script>
-<script src="content/safety.js"></script>
+<script src="app.js?v=3"></script>
+<script src="search.js?v=3"></script>
+<!-- Lessons, in order. After editing any file, bump every ?v= number so browsers fetch the new copy. -->
+<script src="content/start-here.js?v=3"></script>
+<script src="content/building-blocks.js?v=3"></script>
+<script src="content/windows.js?v=3"></script>
+<script src="content/web-email.js?v=3"></script>
+<script src="content/iphone.js?v=3"></script>
+<script src="content/everyday.js?v=3"></script>
+<script src="content/safety.js?v=3"></script>
 <!-- Reference pages -->
-<script src="content/tasks.js"></script>
-<script src="content/pages.js"></script>
+<script src="content/tasks.js?v=3"></script>
+<script src="content/pages.js?v=3"></script>
 </body>
 </html>

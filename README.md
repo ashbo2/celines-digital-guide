@@ -8,6 +8,7 @@ A training site and reference guide for using a computer and iPhone confidently.
 |---|---|
 | `index.html` | Page shell: top bar (Home, text size) and the list of content files to load |
 | `app.js` | Navigation, saved progress, text size, read-aloud, "think it through" questions, "Can you spot it?" screens |
+| `search.js` | "How do I…?" search: handles full-sentence questions, everyday words (`SEARCH_SYNONYMS`, `SEARCH_PHRASES`), and small typos |
 | `styles.css` | All styling (v1 mock-screen styles at the top, v2 layout and accessibility at the bottom) |
 | `content/start-here.js` … `content/safety.js` | Lessons, one file per part, in the order listed in `index.html` |
 | `content/tasks.js` | "How do I…?" quick-help cards |
@@ -21,6 +22,9 @@ Addresses: `#/` home · `#/learn` all lessons · `#/lesson/<id>` · `#/howto` ·
 - **Add a lesson:** add `{ id: "...", title: "...", html: \`...\` }` to a module's `lessons` list. Lesson order = order in the file.
 - **Add a quick-help card:** copy an entry in `content/tasks.js`. `lessons: [...]` links to related lesson ids.
 - **Building blocks you can use in lesson HTML:** `.analogy`, `.key-concept`, `.tip-box`, `.warning-box`, `.steps`, `.pattern-card`, `.compare`, `.quiz` (gentle question), `.spot` (Can you spot it?), plus the v1 mock screens (`.browser-mockup`, `.win-window`, `.iphone`, …). Mock screens automatically get a "Practice picture" label.
+
+- **After any edit, bump the `?v=` number** on every file in `index.html` (e.g. `?v=3` → `?v=4`). Otherwise browsers may keep using an old saved copy.
+- **Search not finding something?** Add words to that card's `keywords` in `content/tasks.js`, or add an everyday term to `SEARCH_SYNONYMS` in `search.js`.
 
 ## Design rules
 

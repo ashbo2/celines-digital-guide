@@ -157,40 +157,38 @@ function viewLesson(id) {
   </div>`;
 }
 
-function taskMatches(q) {
-  const stop = new Set(['how', 'do', 'i', 'a', 'an', 'the', 'my', 'to', 'on', 'in', 'of', 'for', 'is', 'it', 'can', 'what', 'with', 'me', 'and', 'or']);
-  const words = q.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w && !stop.has(w));
-  if (!words.length) return null;
-  const score = text => { text = text.toLowerCase(); return words.reduce((s, w) => s + (text.includes(w.replace(/s$/, '')) ? 1 : 0), 0); };
-  const tasks = GUIDE.tasks.map(t => ({ t, s: score(t.title) * 3 + score((t.keywords || '') + ' ' + t.group) * 2 + score(t.steps.join(' ')) }))
-    .filter(x => x.s > 0).sort((a, b) => b.s - a.s).map(x => x.t);
-  const lessons = allLessons().map(l => ({ l, s: score(l.title) * 3 + score(l.html.replace(/<[^>]+>/g, ' ')) }))
-    .filter(x => x.s >= words.length * 2).sort((a, b) => b.s - a.s).slice(0, 5).map(x => x.l);
-  return { tasks, lessons };
-}
+/* taskMatches(q) lives in search.js */
 function taskLink(t) { return `<a class="task-link" href="#/howto/${t.id}"><span class="t-icon">${t.icon}</span><span>${esc(t.title)}</span></a>`; }
 function renderTaskResults(q) {
   const box = document.getElementById('task-results');
   if (!box) return;
-  const m = q ? taskMatches(q) : null;
-  if (!m) {
+  const m = q && q.trim() ? taskMatches(q) : null;
+  const everything = () => {
     const groups = [...new Set(GUIDE.tasks.map(t => t.group))];
-    box.innerHTML = groups.map(g => `<div class="task-group"><h2>${esc(g)}</h2><div class="task-list">${GUIDE.tasks.filter(t => t.group === g).map(taskLink).join('')}</div></div>`).join('');
-    return;
-  }
+    return groups.map(g => `<div class="task-group"><h2>${esc(g)}</h2><div class="task-list">${GUIDE.tasks.filter(t => t.group === g).map(taskLink).join('')}</div></div>`).join('');
+  };
+  if (!m) { box.innerHTML = everything(); return; }
   let h = '';
-  if (m.tasks.length) h += `<div class="task-group"><h2>Quick help</h2><div class="task-list">${m.tasks.map(taskLink).join('')}</div></div>`;
-  if (m.lessons.length) h += `<div class="task-group"><h2>Lessons that talk about this</h2><div class="task-list">${m.lessons.map(l => `<a class="task-link" href="#/lesson/${l.id}"><span class="t-icon">&#128218;</span><span>${esc(l.title)}</span></a>`).join('')}</div></div>`;
-  if (!h) h = `<div class="no-results"><p><strong>Hmm, nothing matched "${esc(q)}".</strong></p><p>Try a simpler word, like <em>bill</em>, <em>password</em>, <em>print</em>, or <em>email</em>. Or scroll down the full list below.</p></div>` +
-    `<div class="task-group"><h2>Everything</h2><div class="task-list">${GUIDE.tasks.map(taskLink).join('')}</div></div>`;
-  box.innerHTML = h;
+  if (m.tasks.length) h += `<div class="task-group"><h2>Here's what might help</h2><div class="task-list">${m.tasks.map(taskLink).join('')}</div></div>`;
+  if (m.lessons.length) h += `<div class="task-group"><h2>Lessons that explain this</h2><div class="task-list">${m.lessons.map(l => `<a class="task-link" href="#/lesson/${l.id}"><span class="t-icon">&#128218;</span><span>${esc(l.title)}</span></a>`).join('')}</div></div>`;
+  if (!h) {
+    h = `<div class="no-results"><p><strong>I couldn't find a match for "${esc(q)}." That's okay!</strong></p>
+      <p>Try saying it a different way, or use one or two simple words, like <em>bill</em>, <em>password</em>, <em>print</em>, <em>email</em>, or <em>scam</em>.
+      Still stuck? <a href="#/help">Call Ari, Anijke, or Asher</a>.</p></div>`;
+  }
+  box.innerHTML = h + `<details class="all-tasks"><summary>Show the full list of everything</summary>${everything()}</details>`;
 }
 function viewHowto() {
+  const examples = ['How do I pay my electric bill?', 'The words are too small', 'Someone called saying they’re my bank', 'I can’t find something I downloaded'];
   return `<div class="page">
     <h1>How do I&hellip;?</h1>
-    <p class="lead">Type a word or two about what you want to do, or pick from the list below.</p>
-    <input class="search-box" id="task-search" type="search" placeholder="For example: pay a bill, password, print, scam" autocomplete="off" aria-label="Search for a task">
-    <div id="task-results"></div>
+    <p class="lead">Type your question in your own words &mdash; a full sentence is fine. Or pick from the list below.</p>
+    <form class="search-row" id="task-form" role="search" onsubmit="return false">
+      <input class="search-box" id="task-search" type="search" placeholder="Type your question here" autocomplete="off" aria-label="Type your question">
+      <button class="bar-btn primary search-go" type="submit">&#128269; Search</button>
+    </form>
+    <div class="examples"><span>For example:</span> ${examples.map(e => `<button class="example-chip" data-action="example" data-q="${esc(e)}">${esc(e)}</button>`).join('')}</div>
+    <div id="task-results" aria-live="polite"></div>
   </div>`;
 }
 function viewTask(id) {
@@ -250,7 +248,9 @@ function enhance() {
   if (s) {
     const q = decodeURIComponent((location.hash.split('?q=')[1] || ''));
     s.value = q; renderTaskResults(q);
-    s.addEventListener('input', () => renderTaskResults(s.value));
+    let timer;
+    s.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => renderTaskResults(s.value), 300); });
+    document.getElementById('task-form').addEventListener('submit', () => { clearTimeout(timer); renderTaskResults(s.value); s.blur(); });
   }
 }
 
@@ -272,6 +272,7 @@ function route() {
   document.title = title + " — Celine's Guide";
   window.scrollTo(0, 0);
   enhance();
+  updatePageProgress();
   const h1 = document.querySelector('.page h1');
   if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
 }
@@ -295,6 +296,11 @@ document.addEventListener('click', e => {
   if (act === 'size-down') return changeSize(-1);
   if (act === 'size-up') return changeSize(1);
   if (act === 'read') return readPage();
+  if (act === 'example') {
+    const s = document.getElementById('task-search');
+    if (s) { s.value = t.dataset.q; renderTaskResults(s.value); }
+    return;
+  }
   if (act === 'finish') {
     const id = t.dataset.id, now = !isDone(id);
     setDone(id, now);
@@ -339,6 +345,16 @@ document.addEventListener('click', e => {
     }
   }
 });
+
+/* ── "How far down the page" line ── */
+function updatePageProgress() {
+  const f = document.getElementById('page-progress-fill');
+  if (!f) return;
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  f.style.width = (max > 0 ? Math.min(100, window.scrollY / max * 100) : 0) + '%';
+}
+window.addEventListener('scroll', () => requestAnimationFrame(updatePageProgress), { passive: true });
+window.addEventListener('resize', updatePageProgress);
 
 window.addEventListener('hashchange', route);
 document.addEventListener('DOMContentLoaded', () => { applySize(); route(); });
